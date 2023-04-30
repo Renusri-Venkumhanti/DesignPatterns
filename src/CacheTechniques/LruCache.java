@@ -29,7 +29,7 @@ public class LruCache {
 			Node node = map.get(key);
 			remove(node);
 			insert(node);
-			return map.get(key).value;
+			return node.value;
 		}else
 		return -1;
 	}
